@@ -25,9 +25,9 @@ public class CurrencyConverter {
             case 2: 
                 Dollar_to_other(amount);
                 break;
-//            case 3:
-//                Euro_to_other(amount);
-//                break;
+            case 3:
+                Euro_to_other(amount);
+                break;
         }
     }
     
@@ -51,6 +51,18 @@ public class CurrencyConverter {
         
         System.out.println("1$ = "+ 0.93 + "Euros");
         System.out.println(amt + "$ =" + (amt*0.011) + " Euro" );
+    }
+    
+    
+    public static void Euro_to_other(double amt){
+        
+        System.out.println("1 Euro = "+ 89.32 + " Rupee");
+        
+        System.out.println(amt + " Euro =" + (amt*89.32) + " Rupee" );
+        
+        
+        System.out.println("1 Euro = "+ 1.08 + " $");
+        System.out.println(amt + " Euro =" + (amt*1.08) + " $" );
     }
 }
 
